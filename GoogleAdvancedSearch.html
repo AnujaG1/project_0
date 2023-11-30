@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: red;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        h2 {
+            font-weight: 400;
+        }
+    input {
+            vertical-align: middle;
+            margin-right: 20px;
+        }
+        .col2 {
+            background-color: blue;
+            color: aliceblue;
+            margin-left: 100px;    
+        }
+        
+    </style>
+</head>
+<body>
+<form>
+    <div id="container">
+        <div class="col">
+        <h1>Advanced Search</h1>
+       </div>
+        <div class="row">
+            <h2>
+                Find pages with...
+            </h2>
+        
+        <p>all these words: <input type="text"></p>
+        <p>this exact word or phrase: <input type="text"></p>
+        <p>any of these words: <input type="text"></p>
+        <p>none of this words: <input type="text"></p>
+        <p>numbers ranging from: <input type="text"> to <input type="text"></p>
+    </div>
+    <div class="row1">
+        <h2>Then narrow your results by...</h2>
+        <p>language: <input type="language" list="language" placeholder="any language"></p>
+        <datalist id = "language">
+            <option value="Arabic">
+            <option value="Africans">
+            <option value="Americans">
+            <option value="Chinese">
+            <option value="Danish">
+            <option value="English">         
+        </datalist>
+        <p>region: <input type="region" list="region" placeholder="any region"></p>
+        <datalist id="region">
+            <option value="Afganisthan">
+                <option value="Albenia">
+                <option value="Denmark">
+                <option value="China">
+                <option value="America">
+                <option value="England"> 
+        </datalist>
+        <p>site or domain: <input type="link"></p>
+        <p>terms appearing: <input type="page" list="page" placeholder="anywhere in the page"></p>
+        <datalist id="page">
+                <option value="anywhere in the page">
+                <option value="in the title of the page">
+                <option value="in the text of the page">
+                <option value="in the URL of hte page">
+                <option value="in links to the page">
+        </datalist>
+        <p>file type: <input type="format" list="format" placeholder="any format"></p>
+        <datalist id="format">
+            <option value="Adobe Acrobat PDF(.pdf)">
+            <option value="Adobe Postscript(.ps)">
+            <option value="Autodesk DWF(.dwf)">
+            <option value="Google Earth KML(.kml)">
+            <option value="Google Earth KMZ(.kmz)">
+            <option value="Microsoft Excel(.xls)">
+            <option value="Microsoft Powerpoint(.ppt)">
+             <option value="Microsoft Word(.doc)">
+             <option value="Rich Text Format(.rtf)">
+                <option value="Shockwave Flash(.swf)">
+        </datalist>
+        <p style="color: blue;">usage rights:<input type="licence" list="licence" placeholder="not filtered by licence" ></p>
+        <datalist id="licence">
+                <option value="not filtered by licence">
+                <option value="free to use or share">
+                <option value="free to use or share, even commercially ">
+                <option value="free to use share or modify">
+                <option value="free to use, share or modify, even commercially"> 
+        </datalist>
+    </div>
+</div>
+<div class="row1">
+<button class="col2"><a style="color: white;", href="index.html"> Advanced Search</a></button> 
+</div>
+</div>
+</form>
+    </body>
+</html>
